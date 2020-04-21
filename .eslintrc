@@ -1,31 +1,33 @@
 {
-    "plugins":["babel", "react"],
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:json/recommended"
-      ],
-    "parserOptions": {
-        "ecmaFeatures": {
+  "plugins":["babel", "react"],
+  "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
           "jsx": true
-        }
-      },
-    "env": {
-      "es6": true,
-      "node": true,
-      "browser": true
-    },
-    "globals": {
-      "exampleGlobalVariable": true
-    },
-    "rules": {
+      }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "mocha": true
+},
+  "globals": {
+    "exampleGlobalVariable": true
+  },
+  "rules": {
 
-      "no-unused-vars": "warn",
+    "no-unused-vars": "warn",
 
-      //Enforce style
-      "semi": ["error", "always"],
-      "comma-dangle": ["error", "always-multiline"],
-      "quotes": ["error", "double"]
-      
-    }
+    //Enforce style
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "quotes": ["error", "double"]
+    
   }
+}
